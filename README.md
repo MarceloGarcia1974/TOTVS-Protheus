@@ -1,5 +1,5 @@
 # TOTVS-Protheus
-Fontes diversos com recursos essenciais
+Fontes diversos com recursos variados
 
 <b>Marcelo Garcia dos Santos</b><br>
 www.topconneect.com.br<br>

@@ -18,7 +18,7 @@ Local nI := 0
 Local cEmp := '01'
 Local cFilx:=CFILANT
 Local cEmpx:=CEMPANT
-Private aEmpresas := {{'01','01'},{'01','02'},{'01','03'}} //lista com as filias a receberem a cópia
+Private aEmpresas := {{'01','01'},{'01','02'},{'01','03'}} //array com as filias a receberem a cópia
 
 If inclui
     //mostra pergunta do parametro cMsg

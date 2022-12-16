@@ -1,13 +1,17 @@
 #INCLUDE "TOTVS.CH"
 #INCLUDE "TOPCONN.CH"
-
+/*
+Marcelo Garcia dos Santos
+www.topconneect.com.br
+marcelo.gsantos@gmail.com
+https://www.linkedin.com/in/marceloadvogado/
+*/
 User Function CHKCEP()
 local aPergs    := {}
 
 Private aLog    := {}
 Private aTitle  := {}
-Private cPerg   := "CHKCEP"
-private aParam := {}
+private aParam  := {}
 
     aadd(aPergs, {1, 'CEP: ', space(8),,, '',,, .f.})
     if 	parambox(aPergs, 'Informe o CEP', aParam,,,,,,, 'CHKCEP', .t., .t.)

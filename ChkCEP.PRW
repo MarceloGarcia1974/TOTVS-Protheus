@@ -5,6 +5,8 @@ Marcelo Garcia dos Santos
 www.topconneect.com.br
 marcelo.gsantos@gmail.com
 https://www.linkedin.com/in/marceloadvogado/
+
+Busca CEP via WebService do viacep.com.br
 */
 User Function CHKCEP()
 local aPergs    := {}
@@ -46,7 +48,7 @@ LOCAL oJson
             Return 'CEP nao encontrado'
         endif
 
-		cRet:="logradouro: "    + oJson:GetJsonText("logradouro") + CRLF
+        cRet:="logradouro: "    + oJson:GetJsonText("logradouro") + CRLF
         cRet+="complemento: "   + oJson:GetJsonText("complemento") + CRLF
         cRet+="localidade: "    + oJson:GetJsonText("localidade") + CRLF
         cRet+="bairro: "        + oJson:GetJsonText("bairro") + CRLF

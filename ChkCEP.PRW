@@ -2,7 +2,7 @@
 #INCLUDE "TOPCONN.CH"
 /*
 Marcelo Garcia dos Santos
-www.topconneect.com.br
+www.topconnect.com.br
 marcelo.gsantos@gmail.com
 https://www.linkedin.com/in/marceloadvogado/
 
@@ -40,7 +40,7 @@ LOCAL oJson
         cError := oJson:fromJson(cRetorno) 
 
         If !Empty(cError) //ocorrencia de qualquer erro
-            Return 'CEP Inv·lido'
+            Return 'CEP Inv√°lido'
         endif
 
         cRet:=oJson:GetJsonText("logradouro") //busca por um item do Json

@@ -1,13 +1,13 @@
 /*
 Marcelo Garcia dos Santos
-www.topconneect.com.br
+www.topconnect.com.br
 marcelo.gsantos@gmail.com
 https://www.linkedin.com/in/marceloadvogado/
 
 Ponto de entrada
-A010TOK: ValidaÁ„o para inclus„o ou alteraÁ„o do Produto
+A010TOK: Valida√ß√£o para inclus√£o ou altera√ß√£o do Produto
 
-Utilizado para copiar o cadastro de um produto para outras filiais durante a criaÁ„o do mesmo.
+Utilizado para copiar o cadastro de um produto para outras filiais durante a cria√ß√£o do mesmo.
 */
 
 User Function A010TOK
@@ -18,7 +18,7 @@ Local nI := 0
 Local cEmp := '01'
 Local cFilx:=CFILANT
 Local cEmpx:=CEMPANT
-Private aEmpresas := {{'01','01'},{'01','02'},{'01','03'}} //array com as filias a receberem a cÛpia
+Private aEmpresas := {{'01','01'},{'01','02'},{'01','03'}} //array com as filias a receberem a c√≥pia
 
 If inclui
     //mostra pergunta do parametro cMsg
@@ -26,7 +26,7 @@ If inclui
 		For nI := 1 To Len(aEmpresas)
 			if (aEmpresas[nI][2] <> cFilx) //desprezar a filial logada
 				RPCSetType(3)  //Nao consome licensas
-				RpcSetEnv(cEmp,aEmpresas[nI][2],,,,GetEnvServer(),{ }) //Abertura do ambiente em rotinas autom·ticas
+				RpcSetEnv(cEmp,aEmpresas[nI][2],,,,GetEnvServer(),{ }) //Abertura do ambiente em rotinas autom√°ticas
 				SB1->(RecLock("SB1",.T.))
 				MsgRun("Incluindo produto na filial "+aEmpresas[nI][2],"Aguarde....",{|| AvReplace("M","SB1") } ) 
 				//altero a filial do produto (SB1)
@@ -37,7 +37,7 @@ If inclui
 			endif
 		Next
 		//Voltar ambientacao anterior
-		RpcSetEnv(cEmpx,cFilx,,,,GetEnvServer(),{ }) //Abertura do ambiente em rotinas autom·ticas
+		RpcSetEnv(cEmpx,cFilx,,,,GetEnvServer(),{ }) //Abertura do ambiente em rotinas autom√°ticas
 	Endif
 Endif
 
